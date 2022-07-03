@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-div">
+                <p class="header-text">
+                    Available Budget in %Month%:
+                </p>
+                <p class="available-balance">
+                    + 2,345.64
+                </p>
+                <div class="income-div">
+                    <p class="income-p">
+                        INCOME
+                    </p>
+                    <P>
+                        + <span class="total-income">4,300.00</span>
+                    </P>
+                </div>
+                <div class="expenses-div">
+                    <p class="expenses-p">
+                        EXPENSES
+                    </p>
+                    <P>
+                       <span class="total-expenses">4,300.00</span>
+                    </P>
+                </div>
+            </div>
+        </header>
+
+        <article class="form2">
+            <form class="form">
+                <select name="add" class="option">
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                </select>
+
+                <input 
+                    type="text"       
+                    class="description" 
+                    placeholder="Add decription" 
+                    >
+
+                <input  
+                    type="number" 
+                    class="value--input value" 
+                    placeholder="Value">
+                <button class="checkmark">&checkmark;</button>
+            </form>
+        </article>
+
+        <main class="main">
+            <div class="income-movement">
+                <p class="movement-name">INCOME </p>
+                <ul class="income-row">
+                    <li class="income-text">
+                        <p class="income-p">
+                            Salary
+                        </p>
+                        <P>
+                            + <span class="income-price">4,300.00</span>
+                        </P>
+                    </li>
+                    <li class="income-text">
+                        <p class="income-p">
+                            Salary
+                        </p>
+                        <P>
+                            + <span class="income-price">4,300.00</span>
+                        </P>
+                    </li>
+                </ul>
+            </div>
+            <div class="expenses-movement">
+                <p class="movement-name2">EXPENSES </p>
+                <div class="expenses-row">
+                    <div class="expenses-text">
+                        <p class="income-p">
+                            Apartment rent
+                        </p>
+                        <P>
+                            - <span class="expenses-price">4,300.00</span>
+                        </P>
+                    </div>
+                    <div class="expenses-text">
+                        <p class="income-p">
+                            Apartment rent
+                        </p>
+                        <P>
+                            - <span class="expenses-price">4,300.00</span>
+                        </P>
+                    </div>
+                </div>
+            </div>   
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

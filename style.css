@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 80.5%;
+}
+
+@font-face {
+    font-family: lato-light;
+    src: url(../lato/Lato-Light.ttf);
+}
+
+body {
+    font-family: lato-light;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Header */
+.header {
+    /* display: relative; */
+    /* align-content: center; */
+    background-image: linear-gradient(to top,rgba(17, 19, 17, 0.8), hsla(180, 3%, 6%, 0.8)), url(./unsplash.jfif); 
+    background-size: cover;   
+    background-position: center;
+    height: 40vh;
+    color: #fff;
+}
+
+.header-div {
+    text-align: center;
+    margin: 0 40rem;
+    align-self: center;
+
+}
+
+.header-text {
+    font-size: 1.4rem;
+    padding-top: 3.5rem;
+}
+
+.available-balance {
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Form */
+
+
+.option {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    align-self: center;
+}
+
+.checkmark {
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    text-align: center;
+    /* padding: 0 1rem; */
+    margin: 0 30rem;
+}
+
+.form2 {
+    background-color: #d1d0d0;
+}
+
+.description {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    /* border: 1px solid #555; */
+    border: none;
+}
+
+.value {
+    width: 10%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    right: 0;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+
+
+/* Movement Display */
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 24rem;
+    /* gap: 4rem; */
+}
+
+.income-movement,
+.expenses-movement {
+    width: 28rem;
+}
+
+.income-text,
+.expenses-text {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1rem solid rgb(158, 158, 158);
+    padding: 0.5rem 0;
+    font-weight: bold;
+    padding: 0.3rem;
+}
+
+.movement-name {
+    font-size: 1.4rem;
+    font-style: 600;
+    padding: 1rem 0;
+    color: rgb(21, 173, 173);
+}
+
+.movement-name2 {
+    font-size: 1.4rem;
+    font-style: 600;
+    padding: 1rem 0; 
+    color: rgb(241, 40, 40);
+}
+
+.income-row,
+.expenses-row {
+    /* background-color: #000; */
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    row-gap: 0.3rem;
+}
+
+
+.income-text:nth-child(even),
+.expenses-text:nth-child(even){
+    background-color: #d1d0d0;
+}
+
+.income-price {
+    color: rgb(21, 173, 173);
+}
+
+.expenses-price {
+    color: rgb(241, 40, 40);
+    font-weight: bold;
+}
+
+.income-div,
+.expenses-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 2.5rem 0.7rem 0.7rem;
+    font-size: 1rem;
+}
+
+.income-div {
+    background-color: rgb(35, 207, 207);
+    margin-bottom: 1rem;
+}
+
+.expenses-div {
+    background-color: rgb(241, 40, 40);
+}
+
+.income-p,
+.expenses-p {
+    color: #444;
+    font-weight: 600;
+}
