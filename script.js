@@ -100,7 +100,7 @@ displayBalance(totalBalance);
 btnSubmit.addEventListener('click', function(e){
     e.preventDefault();
     const amount = Number(value.value);
-    console.log(amount)
+    // console.log(amount)
     const descriptionText = description.value;
 
     if (amount > 0 && option.value === 'plus' && descriptionText){
